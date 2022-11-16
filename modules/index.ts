@@ -6,6 +6,7 @@ export default defineNuxtModule({
     name: "custom",
   },
   setup(option, nuxt) {
+    console.log('start custom module..')
     nuxt.hook("pages:extend", (pages) => {
       pages.push({
         path: "/login",
